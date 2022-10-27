@@ -11,6 +11,9 @@
 		FA68993C290AD0E8004E3EBC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA68993B290AD0E8004E3EBC /* ContentView.swift */; };
 		FA68993E290AD0EB004E3EBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA68993D290AD0EB004E3EBC /* Assets.xcassets */; };
 		FA689941290AD0EB004E3EBC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA689940290AD0EB004E3EBC /* Preview Assets.xcassets */; };
+		FA689949290AD265004E3EBC /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA689948290AD264004E3EBC /* Header.swift */; };
+		FA68994D290AE1E8004E3EBC /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA68994C290AE1E8004E3EBC /* Card.swift */; };
+		FA689951290B1946004E3EBC /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA689950290B1946004E3EBC /* Message.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		FA68993B290AD0E8004E3EBC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FA68993D290AD0EB004E3EBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA689940290AD0EB004E3EBC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FA689948290AD264004E3EBC /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
+		FA68994C290AE1E8004E3EBC /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Card.swift; path = ../Card.swift; sourceTree = "<group>"; };
+		FA689950290B1946004E3EBC /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +57,14 @@
 		FA689938290AD0E8004E3EBC /* Telegram */ = {
 			isa = PBXGroup;
 			children = (
+				FA689947290AD1E3004E3EBC /* New Group */,
 				FA689939290AD0E8004E3EBC /* TelegramApp.swift */,
 				FA68993B290AD0E8004E3EBC /* ContentView.swift */,
 				FA68993D290AD0EB004E3EBC /* Assets.xcassets */,
 				FA68993F290AD0EB004E3EBC /* Preview Content */,
+				FA689948290AD264004E3EBC /* Header.swift */,
+				FA68994C290AE1E8004E3EBC /* Card.swift */,
+				FA689950290B1946004E3EBC /* Message.swift */,
 			);
 			path = Telegram;
 			sourceTree = "<group>";
@@ -65,6 +75,13 @@
 				FA689940290AD0EB004E3EBC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FA689947290AD1E3004E3EBC /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +155,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA68993C290AD0E8004E3EBC /* ContentView.swift in Sources */,
+				FA689949290AD265004E3EBC /* Header.swift in Sources */,
+				FA689951290B1946004E3EBC /* Message.swift in Sources */,
 				FA68993A290AD0E8004E3EBC /* TelegramApp.swift in Sources */,
+				FA68994D290AE1E8004E3EBC /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

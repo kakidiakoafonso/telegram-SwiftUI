@@ -8,14 +8,32 @@
 import SwiftUI
 
 struct ContentView: View {
+    private var cardItems: [String] = ["Encontrar pesssoas","Convidar pessoas","Juntar-se a um grupo"]
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+           Header()
+            ScrollView(.horizontal, showsIndicators: false){
+                HStack{
+                    ForEach(cardItems, id: \.self){ item in
+                        Card(texto:item)
+                    }
+                }
+                
+               
+            }
+            .padding(.vertical,10)
+            ScrollView(showsIndicators: false){
+                VStack(spacing: 20){
+                    ForEach(0...10, id:\.self){
+                        item in
+                        Message()
+                    }
+                }
+            }
+            Spacer()
         }
         .padding()
+        
     }
 }
 
